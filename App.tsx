@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Layout from './src/components/molecules/Layout';
+import Home from './src/components/screens/Home';
 
 export default function App() {
   return (
     <Layout>
-      <Text>Ola</Text>
+      <Home />
     </Layout>
   );
 }

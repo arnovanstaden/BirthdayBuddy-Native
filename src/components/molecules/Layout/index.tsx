@@ -1,13 +1,13 @@
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import Navbar from '../NavBar';
 import styles from './styles';
 
 const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <View style={styles.layout}>
-      <ScrollView style={styles.content}>
+      <View style={styles.content}>
         {children}
-      </ScrollView>
+      </View>
       <Navbar />
     </View>
   );

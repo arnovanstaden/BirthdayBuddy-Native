@@ -12,11 +12,9 @@ const styles = StyleSheet.create({
   content: {
     width: '100%',
     height: '100%',
-    paddingHorizontal: 16,
-    paddingTop: 48,
-    flexGrow: 1,
-    flexBasis: 'auto',
-    color: '#FDFDFD',
+    paddingHorizontal: 24,
+    paddingTop: 100,
+    paddingBottom: 150
   }
 });
 
