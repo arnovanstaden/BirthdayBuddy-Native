@@ -1,11 +1,13 @@
 
 import { View, Image } from 'react-native';
-import styles from './styles';
 
-const Avatar = () => {
+const Avatar = ({ size }: { size?: number }) => {
   return (
     <Image
-      style={styles.avatar}
+      style={{
+        height: size || 48,
+        width: size || 48
+      }}
       source={require('../../../../assets/images/Avatar.png')}
     />
   );

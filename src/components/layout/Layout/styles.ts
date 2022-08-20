@@ -13,8 +13,10 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     paddingHorizontal: 24,
-    paddingTop: 100,
-    paddingBottom: 150
+    paddingTop: 80,
+  },
+  contentContainer: {
+    paddingBottom: 140
   }
 });
 

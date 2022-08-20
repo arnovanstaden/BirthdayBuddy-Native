@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   headingContainer: {
     width: '100%',
-    marginBottom: 32
+    marginBottom: 24
   },
   subHeading: {
     color: '#959595',

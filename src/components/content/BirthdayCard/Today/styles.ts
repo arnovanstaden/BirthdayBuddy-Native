@@ -1,14 +1,15 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  birthdayCard: {
+  birthdayCardToday: {
     width: '100%',
     backgroundColor: '#242424',
     marginTop: 16,
-    paddingVertical: 12,
+    paddingVertical: 20,
     paddingHorizontal: 20,
-    flexDirection: 'row',
-    borderRadius: 15
+    borderRadius: 15,
+    borderWidth: 2,
+    borderColor: '#29C13E'
   },
   dayCount: {
     borderColor: '#959595',
@@ -19,7 +20,6 @@ const styles = StyleSheet.create({
   },
   content: {
     flexGrow: 1,
-    paddingLeft: 12,
     flexDirection: 'row',
     alignItems: 'center'
   },
@@ -30,16 +30,25 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: '#FDFDFD',
     fontSize: 16,
-    letterSpacing: 0.25
+    letterSpacing: 0.25,
+    marginBottom: 4
   },
   date: {
     color: '#29C13E',
     fontWeight: '500',
-    fontSize: 14
+    fontSize: 13,
+    paddingRight: 8
   },
   age: {
     color: '#959595',
-    fontSize: 12
+    fontSize: 12,
+  },
+  dateSummary: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  buttons: {
+    marginTop: 16
   }
 });
 

@@ -1,9 +1,9 @@
 import { Pressable, Text, View, Image } from 'react-native';
-import Avatar from '../../atoms/Avatar';
-import DayCount from '../../atoms/DayCount';
+import Avatar from '../../../atoms/Avatar';
+import DayCount from '../../../atoms/DayCount';
 import styles from './styles';
 
-const BirthdayCard = () => {
+const BirthdayCardDefault = () => {
   return (
     <Pressable style={styles.birthdayCard}>
       <View style={styles.dayCount}>
@@ -28,6 +28,6 @@ const BirthdayCard = () => {
   );
 }
 
-export default BirthdayCard;
+export default BirthdayCardDefault;
 
 

@@ -5,9 +5,13 @@ import styles from './styles';
 const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <View style={styles.layout}>
-      <View style={styles.content}>
+      <ScrollView
+        style={styles.content}
+        contentContainerStyle={styles.contentContainer}
+      >
+
         {children}
-      </View>
+      </ScrollView>
       <Navbar />
     </View>
   );
