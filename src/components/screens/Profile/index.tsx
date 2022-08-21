@@ -1,14 +1,14 @@
-import { View } from 'react-native';
 import Heading from '../../atoms/Heading';
+import Layout from '../../layout/Layout';
 
 const ProfileScreen = () => {
   return (
-    <View>
+    <Layout>
       <Heading
         subheading="It's all about you"
         heading="Your Profile"
       />
-    </View>
+    </Layout>
   );
 }
 

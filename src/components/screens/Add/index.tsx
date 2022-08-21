@@ -1,14 +1,15 @@
 import { View } from 'react-native';
 import Heading from '../../atoms/Heading';
+import Layout from '../../layout/Layout';
 
 const AddBirthdayScreen = () => {
   return (
-    <View>
+    <Layout>
       <Heading
         subheading="Don't forget again!"
         heading="Add a Birthday"
       />
-    </View >
+    </Layout >
   );
 }
 

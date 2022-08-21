@@ -2,7 +2,7 @@ import { ScrollView, View } from 'react-native';
 import Navbar from '../NavBar';
 import styles from './styles';
 
-const Layout = ({ children }: { children: JSX.Element }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <View style={styles.layout}>
       <ScrollView
