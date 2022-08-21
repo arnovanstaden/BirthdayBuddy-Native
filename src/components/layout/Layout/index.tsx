@@ -2,17 +2,25 @@ import { ScrollView, View } from 'react-native';
 import Navbar from '../NavBar';
 import styles from './styles';
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+interface IProps {
+  children: React.ReactNode;
+  noNav?: true
+  styles?: object;
+}
+
+const Layout = (props: IProps) => {
   return (
     <View style={styles.layout}>
       <ScrollView
         style={styles.content}
-        contentContainerStyle={styles.contentContainer}
+        contentContainerStyle={[!props.noNav && styles.contentContainer]}
       >
 
-        {children}
+        <View style={props.styles}>
+          {props.children}
+        </View>
       </ScrollView>
-      <Navbar />
+      {!props.noNav && <Navbar />}
     </View>
   );
 }

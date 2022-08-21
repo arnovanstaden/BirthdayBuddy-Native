@@ -28,7 +28,7 @@ const BirthdayCardToday = () => {
           type="primary"
           small
         >
-          Share Birthday
+          Send Message
         </Button>
       </View>
     </Pressable>
