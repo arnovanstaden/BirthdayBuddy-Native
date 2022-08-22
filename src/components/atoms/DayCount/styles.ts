@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   dayCount: {
     alignItems: 'center',
+    paddingHorizontal: 4
   },
   dayCountNumber: {
     color: '#29C13E',
@@ -11,7 +12,8 @@ const styles = StyleSheet.create({
   },
   dayCountText: {
     color: '#959595',
-    fontSize: 12
+    fontSize: 10,
+    lineHeight: 10
   }
 });
 

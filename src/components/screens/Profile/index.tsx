@@ -3,6 +3,7 @@ import { Switch, Text, View, Platform, Linking } from 'react-native';
 import Avatar from '../../atoms/Avatar';
 import Heading from '../../atoms/Heading';
 import Setting from '../../atoms/Setting';
+import Profile from '../../content/Profile';
 import Layout from '../../layout/Layout';
 import styles from './styles';
 
@@ -18,12 +19,10 @@ const ProfileScreen = () => {
         heading="Your Profile"
       />
 
-      <View style={styles.bio}>
-        <Avatar size={150} />
-        <Text style={styles.name}>Arno van Staden</Text>
-        <Text style={styles.date}>Mon, Jan 24 2022</Text>
-        <Text style={styles.age}>Turns 29</Text>
-      </View>
+      <Profile
+        name="Arno van Staden"
+        birthday='Mon, Jan 24 2022'
+      />
 
       <View style={styles.settingsList}>
         <Setting
@@ -33,7 +32,7 @@ const ProfileScreen = () => {
           styles={styles.setting}
           action={
             <Switch
-              trackColor={{ false: "#959595", true: "#959595" }}
+              trackColor={{ false: "#959595", true: "#FDFDFD" }}
               thumbColor={notificationsEnabled ? "#29C13E" : "#FDFDFD"}
               ios_backgroundColor="#959595"
               onValueChange={handleNotificationsToggle}

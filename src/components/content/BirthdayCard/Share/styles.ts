@@ -10,10 +10,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderRadius: 15
   },
-  dayCount: {
-    borderColor: '#959595',
-    borderRightWidth: 1,
-    paddingRight: 12,
+  checkbox: {
     alignItems: 'center',
     justifyContent: 'center'
   },
